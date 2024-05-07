@@ -26,3 +26,6 @@ Questo progetto mira a creare un server virtuale utilizzando il cloud di AWS per
 
 ## Consegna del compito:
 La consegna del compito si può visualizzre qui: [CONSEGNA.md](CONSEGNA.md)
+
+## Stato compito:
+Lo stato del compito si può visualizzare qui: [STATO.md](STATO.md)
