@@ -1,0 +1,25 @@
+{
+  "name": "progetto-aws",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/AWS_website/style/input.css -o ./src/AWS_website/style/style.css ",
+    "watch": "npx tailwindcss -i ./src/AWS_website/style/input.css -o ./src/AWS_website/style/style.css --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ciollo/Progetto-AWS.git"
+  },
+  "author": "Ciollo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ciollo/Progetto-AWS/issues"
+  },
+  "homepage": "https://github.com/Ciollo/Progetto-AWS#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "prettier": "3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.3"
+  }
+}

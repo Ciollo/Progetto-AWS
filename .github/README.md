@@ -25,7 +25,9 @@ Questo progetto mira a creare un server virtuale utilizzando il cloud di AWS per
 - **JavaScript e Bootstrap (opzionale)**: Utilizzati per aggiungere interattività e migliorare l'aspetto visivo del sito web.
 
 ## Consegna del compito:
+
 La consegna del compito si può visualizzre qui: [CONSEGNA.md](CONSEGNA.md)
 
 ## Stato compito:
+
 Lo stato del compito si può visualizzare qui: [STATO.md](STATO.md)
