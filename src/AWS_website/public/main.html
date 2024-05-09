@@ -67,10 +67,9 @@
         </div>
       </div>
     </header>
-    <div class="mx-auto mt-11 w-3xl max-w-full sm:w-96 lg:w-3xl">
+    <div class="md:w-0.5xl xs:w-96 mx-auto mt-11 sm:w-96 lg:w-2xl xl:w-3xl">
       <div class="w-full">
         <a
-          href="#"
           class="mb-2 inline-flex items-center rounded-md bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-gray-700 dark:text-blue-400"
         >
           <svg
@@ -99,16 +98,16 @@
           >
         </h1>
 
-        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+        <p>
           Nella nostra guida, esamineremo il processo completo di creazione e
           configurazione di un server virtuale utilizzando AWS per ospitare un
-          sito web. <br />
+          sito web. <br>
           Offriremo istruzioni dettagliate per completare con successo
           l'implementazione del sito su AWS, seguendo le migliori pratiche per
           un hosting sicuro e affidabile.
         </p>
 
-        <div class="flex items-center gap-4">
+        <div class="mt-5 flex items-center gap-4">
           <img
             class="h-10 w-10 rounded-full"
             src="../assets/img/ciollo_pgp.jpeg"
@@ -152,39 +151,22 @@
         </div>
         <div>
           <div>
-            <h2
-              class="mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white"
-            >
-              Introduzione
-            </h2>
-            <p
-              class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400"
-            >
-              Benvenuti alla nostra guida su come ospitare un sito web
-              utilizzando Amazon Web Services (AWS), uno dei principali
-              fornitori di servizi di cloud computing al mondo. AWS offre una
-              vasta gamma di servizi e strumenti che consentono di creare,
-              gestire e scalare infrastrutture IT in modo flessibile ed
-              efficiente. Ma cosa significa esattamente "cloud computing" e cosa
-              fa di AWS un'opzione così potente per l'hosting di siti web? In
-              breve, il cloud computing è il processo di fornire risorse
-              informatiche come server, archiviazione, database, networking e
-              altro ancora tramite Internet, piuttosto che attraverso server
-              fisici locali o infrastrutture on-premises. Questo consente alle
-              aziende di accedere a risorse informatiche su richiesta, pagando
-              solo per ciò che utilizzano e senza dover gestire e mantenere
-              fisicamente l'hardware.
+            <h2>Introduzione</h2>
+            <p>
+              AWS è un leader nei servizi di cloud computing. Questo tipo di
+              computing offre risorse informatiche tramite Internet, anziché
+              attraverso server fisici. Con AWS, le aziende possono accedere a
+              queste risorse su richiesta, pagando solo ciò che utilizzano.
+            </p>
+
+            <p>
+              Utilizzare AWS offre vantaggi come scalabilità, sicurezza e
+              flessibilità.
             </p>
           </div>
           <div>
-            <h2
-              class="mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white"
-            >
-              Prerequisiti
-            </h2>
-            <p
-              class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400"
-            >
+            <h2>Prerequisiti</h2>
+            <p>
               Prima di iniziare, è necessario disporre di un account AWS. Se non
               ne hai già uno, puoi crearne uno gratuitamente sul sito web di
               <a
@@ -204,11 +186,7 @@
               </h1>
             </div>
             <div>
-              <h2
-                class="mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white"
-              >
-                Step-1 Creare un'istanza EC2
-              </h2>
+              <h2>Step-1 Creare un'istanza EC2</h2>
               <p class="mb-4 text-lg text-gray-500 dark:text-gray-400">
                 Il primo passo per ospitare un sito web su AWS è creare
                 un'istanza EC2 (Elastic Compute Cloud), che è un server virtuale
@@ -216,15 +194,15 @@
                 esigenze specifiche del tuo sito web. Per creare un'istanza EC2,
                 segui questi passaggi:
               </p>
-              <ol class="list-decimal text-lg text-gray-500 dark:text-gray-400">
+              <ol>
                 <li>
-                  <div class="mb-5">
+                  <div>
                     Accedi alla console di AWS e vai alla sezione "EC2" nel
                     pannello di controllo.
 
                     <div class="mt-3 flex justify-center">
                       <img
-                        class="h-auto max-w-full"
+                        class="h-auto max-w-full border border-gray-200 dark:border-gray-700"
                         src="../assets/img/dashboard_navbar.png"
                         alt="image description"
                       />
@@ -232,7 +210,7 @@
 
                     <div class="mt-3 flex flex-col justify-center">
                       <img
-                        class="h-auto max-w-full"
+                        class="h-auto max-w-full border border-gray-200 dark:border-gray-700"
                         src="../assets/img/dashboard_istance.png"
                         alt="image description"
                       />
@@ -240,37 +218,37 @@
                     </div>
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
-                  <div class="mb-5">
+                  <div>
                     Fai clic su "Lancia istanza" per iniziare il processo di
                     creazione di una nuova istanza EC2.
                     <div class="mt-3 flex justify-center">
                       <img
-                        class="h-auto max-w-3xl object-cover"
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
                         src="../assets/img/launch_istance.png"
                         alt="Launch instance"
                       />
                     </div>
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
-                  <div class="mb-5">
+                  <div>
                     Digita il nome che vuoi dare all tua istanza sotto "Name and
                     tag"
                     <div class="mt-3 flex justify-center">
                       <img
-                        class="h-auto max-w-3xl object-cover"
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
                         src="../assets/img/name_instance.png"
                         alt="Launch instance"
                       />
                     </div>
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
-                  <div class="mb-5">
+                  <div>
                     Seleziona un'immagine AMI (Amazon Machine Image) per la tua
                     istanza EC2. Puoi scegliere tra una vasta gamma di immagini
                     preconfigurate, tra cui sistemi operativi Linux e Windows,
@@ -278,13 +256,13 @@
                   </div>
                   <div class="mt-3 flex justify-center">
                     <img
-                      class="h-auto max-w-3xl object-cover"
+                      class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
                       src="../assets/img/os_instance.png"
                       alt="Launch instance"
                     />
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
                   Seleziona il tipo di istanza e le specifiche hardware che
                   desideri utilizzare per la tua istanza EC2. Puoi scegliere tra
@@ -292,7 +270,7 @@
                   l'istanza alle esigenze del tuo sito web, noi sceglieremo di
                   lasciare i valori di default
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
                   Creiamo delle chiavi di accesso per accedere alla nostra
                   istanza EC2, creeremo delle chiavi di tipo RSA e le salveremo
@@ -424,7 +402,7 @@
                     </div>
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
                   Configura le impostazioni di rete e sicurezza per la tua
                   istanza EC2. Puoi definire regole di sicurezza, gruppi di
@@ -434,8 +412,8 @@
                   HTTPS.
                   <div class="mt-3 flex justify-center">
                     <img
-                      class="h-auto max-w-3xl object-cover"
-                      src="../assets/img/select_security_instance.png"
+                      class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                      src="../assets/img/security_setting.png"
                       alt="Launch instance"
                     />
                   </div>
@@ -499,7 +477,7 @@
                     </div>
                   </div>
                 </li>
-                <hr class="my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700" />
+                <hr>
                 <li>
                   Adesso sei pronto a lanciare la tua istanza EC2. Fai clic sul
                   pulsante "Lancia istanza" per completare il processo.
@@ -507,18 +485,66 @@
               </ol>
             </div>
             <div>
-              <h2
-                class="mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white"
-              >
-                Step-2 Accedere alla console della tua istanza EC2.
-              </h2>
+              <h2>Step-2 Accedere alla console della tua istanza EC2.</h2>
+              <p>
+                Una volta creata la tua istanza EC2, puoi accedere alla console
+                della tua istanza per configurare il server e caricare il tuo
+                sito web. Per accedere alla console della tua istanza EC2, segui
+                questi passaggi:
+                <ol>
+                  <li>
+                    <div>
+                      Torna alla sezione "EC2" nel pannello di controllo di AWS
+                      e fai clic su "Istanze" per visualizzare l'elenco delle
+                      tue istanze EC2.
+                      <div class="mt-3 flex justify-center">
+                        <img
+                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                          src="../assets/img/instances.png"
+                          alt="Launch instance"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <hr>
+                  <li>
+                    <div>
+                      Seleziona la tua istanza EC2 dall'elenco e fai clic su
+                      "Connetti" per accedere alla console della tua istanza.
+                      <div class="mt-3 flex justify-center">
+                        <img
+                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                          src="../assets/img/connect_instance.png"
+                          alt="Launch instance"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <hr>
+                  <li>
+                    <div>
+                      Segui le istruzioni per connetterti alla tua istanza EC2
+                      utilizzando le chiavi di accesso che hai creato in
+                      precedenza.
+                      <div class="mt-3 flex justify-center">
+                        <img
+                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                          src="../assets/img/connect_ssh.png"
+                          alt="Launch instance"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </p>
             </div>
             <div>
-              <h2
-                class="mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white"
-              >
-                FAQ
+              <h2>
+                Step-3 Configurare il server con nginx.
               </h2>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>

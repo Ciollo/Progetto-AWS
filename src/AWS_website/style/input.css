@@ -3,8 +3,28 @@
 @tailwind utilities;
 
 @layer {
-    html,
-    body {
-        @apply m-0 p-0;
-    }
+  html,
+  body {
+    @apply m-0 p-0;
+  }
+
+  p {
+    @apply mb-4 text-lg font-normal text-gray-500 dark:text-gray-400;
+  }
+}
+
+h2 {
+  @apply mb-4 mt-10 text-2xl font-extrabold text-gray-900 dark:text-white;
+}
+
+hr {
+  @apply my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700;
+}
+
+ol {
+  @apply list-decimal text-lg text-gray-500 dark:text-gray-400;
+}
+
+li {
+  @apply my-10;
 }

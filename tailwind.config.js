@@ -3,6 +3,13 @@ module.exports = {
   darkMode: "selector",
   content: ["./src/AWS_website/**/*.{html,js}"],
   theme: {
+    screens: {
+      xs: "320px",
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1200px",
+    },
     extend: {
       colors: {
         navyBlue: {
@@ -33,6 +40,7 @@ module.exports = {
         },
       },
       width: {
+        "0.5xl": "36rem",
         "2xl": "42rem",
         "3xl": "48rem",
         "4xl": "56rem",
