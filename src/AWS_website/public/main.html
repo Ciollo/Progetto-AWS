@@ -67,7 +67,7 @@
         </div>
       </div>
     </header>
-    <div class="md:w-0.5xl xs:w-96 mx-auto mt-11 sm:w-96 lg:w-2xl xl:w-3xl">
+    <div class="mx-auto mt-11 xs:w-96 sm:w-96 md:w-0.5xl lg:w-2xl xl:w-3xl">
       <div class="w-full">
         <a
           class="mb-2 inline-flex items-center rounded-md bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-gray-700 dark:text-blue-400"
@@ -101,7 +101,7 @@
         <p>
           Nella nostra guida, esamineremo il processo completo di creazione e
           configurazione di un server virtuale utilizzando AWS per ospitare un
-          sito web. <br>
+          sito web. <br />
           Offriremo istruzioni dettagliate per completare con successo
           l'implementazione del sito su AWS, seguendo le migliori pratiche per
           un hosting sicuro e affidabile.
@@ -218,7 +218,7 @@
                     </div>
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   <div>
                     Fai clic su "Lancia istanza" per iniziare il processo di
@@ -232,7 +232,7 @@
                     </div>
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   <div>
                     Digita il nome che vuoi dare all tua istanza sotto "Name and
@@ -246,7 +246,7 @@
                     </div>
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   <div>
                     Seleziona un'immagine AMI (Amazon Machine Image) per la tua
@@ -262,7 +262,7 @@
                     />
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   Seleziona il tipo di istanza e le specifiche hardware che
                   desideri utilizzare per la tua istanza EC2. Puoi scegliere tra
@@ -270,7 +270,7 @@
                   l'istanza alle esigenze del tuo sito web, noi sceglieremo di
                   lasciare i valori di default
                 </li>
-                <hr>
+                <hr />
                 <li>
                   Creiamo delle chiavi di accesso per accedere alla nostra
                   istanza EC2, creeremo delle chiavi di tipo RSA e le salveremo
@@ -402,7 +402,7 @@
                     </div>
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   Configura le impostazioni di rete e sicurezza per la tua
                   istanza EC2. Puoi definire regole di sicurezza, gruppi di
@@ -477,7 +477,7 @@
                     </div>
                   </div>
                 </li>
-                <hr>
+                <hr />
                 <li>
                   Adesso sei pronto a lanciare la tua istanza EC2. Fai clic sul
                   pulsante "Lancia istanza" per completare il processo.
@@ -486,65 +486,75 @@
             </div>
             <div>
               <h2>Step-2 Accedere alla console della tua istanza EC2.</h2>
-              <p>
-                Una volta creata la tua istanza EC2, puoi accedere alla console
-                della tua istanza per configurare il server e caricare il tuo
-                sito web. Per accedere alla console della tua istanza EC2, segui
-                questi passaggi:
-                <ol>
-                  <li>
-                    <div>
-                      Torna alla sezione "EC2" nel pannello di controllo di AWS
-                      e fai clic su "Istanze" per visualizzare l'elenco delle
-                      tue istanze EC2.
-                      <div class="mt-3 flex justify-center">
-                        <img
-                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
-                          src="../assets/img/instances.png"
-                          alt="Launch instance"
-                        />
-                      </div>
+              <> Una volta creata la tua istanza EC2, puoi accedere alla console
+              della tua istanza per configurare il server e caricare il tuo sito
+              web. Per accedere alla console della tua istanza EC2, segui questi
+              passaggi:
+              <ol>
+                <li>
+                  <div>
+                    Torna alla sezione "EC2" nel pannello di controllo di AWS e
+                    fai clic su "Istanze" per visualizzare l'elenco delle tue
+                    istanze EC2.
+                    <div class="mt-3 flex justify-center">
+                      <img
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                        src="../assets/img/elenco_istanze.png"
+                        alt="Launch instance"
+                      />
                     </div>
-                  </li>
-                  <hr>
-                  <li>
-                    <div>
-                      Seleziona la tua istanza EC2 dall'elenco e fai clic su
-                      "Connetti" per accedere alla console della tua istanza.
-                      <div class="mt-3 flex justify-center">
-                        <img
-                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
-                          src="../assets/img/connect_instance.png"
-                          alt="Launch instance"
-                        />
-                      </div>
+                  </div>
+                </li>
+                <hr />
+                <li>
+                  <div>
+                    Seleziona la tua istanza EC2 dall'elenco e fai clic su
+                    "Connetti" per accedere alla console della tua istanza.
+                  </div>
+                </li>
+                <hr />
+                <li>
+                  <div>
+                    Seguiamo le istruzioni per connetterti alla tua istanza EC2
+                    utilizzando le chiavi di accesso che hai creato in
+                    precedenza.
+                    <div class="mt-3 flex justify-center">
+                      <img
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                        src="../assets/img/panel_connect_ssh.png"
+                        alt="Launch instance"
+                      />
                     </div>
-                  </li>
-                  <hr>
-                  <li>
-                    <div>
-                      Segui le istruzioni per connetterti alla tua istanza EC2
-                      utilizzando le chiavi di accesso che hai creato in
-                      precedenza.
-                      <div class="mt-3 flex justify-center">
-                        <img
-                          class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
-                          src="../assets/img/connect_ssh.png"
-                          alt="Launch instance"
-                        />
-                      </div>
+                    <p class="mt-10">
+                      Facciamolo, aprendo il nostro terminal copiamo e
+                      incolliamo i comandi che ci vengono forniti.
+                    </p>
+
+                    <div class="mt-3 flex justify-center">
+                      <img
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                        src="../assets/img/ssh_completed.png"
+                        alt="Launch instance"
+                      />
                     </div>
-                  </li>
-                </ol>
-              </p>
+                    <p class="mt-10">
+                      Qui digitiamo il comando neofetch per vedere le informazioni del sistema.  
+                    </p>
+
+                    <div class="mt-3 flex justify-center">
+                      <img
+                        class="h-auto max-w-3xl border-2 border-gray-200 object-cover dark:border-gray-700"
+                        src="../assets/img/neofetch.png"
+                        alt="Launch instance"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ol>
             </div>
             <div>
-              <h2>
-                Step-3 Configurare il server con nginx.
-              </h2>
-              <p>
-
-              </p>
+              <h2>Step-3 Configurare il server con nginx.</h2>
+              <p></p>
             </div>
           </div>
         </div>
