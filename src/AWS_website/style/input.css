@@ -28,3 +28,7 @@ ol {
 li {
   @apply my-10;
 }
+
+label {
+  @apply block mb-2 text-sm font-medium text-white dark:text-gray-300;
+}

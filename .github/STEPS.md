@@ -1,14 +1,5 @@
 # Steps
 
-<<<<<<< Updated upstream
-1) Creare istanza
-1) Accesso alla istanza
-1) docker
-1) nginx
-1) docker compose
-1) mysql
-1) phpmyadmin
-=======
 1. Creare istanza
 1. Accesso alla istanza
 1. docker
@@ -55,4 +46,3 @@ http {
    https://www.datacamp.com/tutorial/set-up-and-configure-mysql-in-docker
 1. phpmyadmin
    https://zomro.com/blog/faq/289-kak-ustanovit-phpmyadmin-v-docker
->>>>>>> Stashed changes

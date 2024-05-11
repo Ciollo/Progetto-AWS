@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/main_logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/AWS_website/style/style.css" />
+    <title>Register</title>
+  </head>
+  <body class="h-screen w-screen bg-navyBlue-100">
+    <div class="flex h-screen items-center justify-center">
+      <form
+        class="mx-auto max-w-md rounded-xl bg-navyBlue px-5 py-5 xs:w-72 sm:w-80 md:w-2xl"
+      >
+        <h2 class="mt-5 text-center text-white">Registrati</h2>
+        <div class="mb-5">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            placeholder="email@example.com"
+            required
+          />
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-5">
+          <div class="mb-5">
+            <label for="text">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              placeholder="Nome"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="email">Cognome</label>
+            <input
+              type="text"
+              id="cognome"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              placeholder="Cognome"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-5">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Registrati
+        </button>
+        <div class="mt-5">
+          <label
+            >Hai già un account?
+            <a
+              href="login.html"
+              class="font-medium text-blue-600 hover:underline dark:text-blue-500"
+              >Accedi</a
+            >
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

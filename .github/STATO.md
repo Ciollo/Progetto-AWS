@@ -6,14 +6,15 @@
 
 ## Core
 
-| Nome     | Stato |
-| -------- | ----- |
-| Docker   | ✅    |
-| NGINX    | ✅    |
-| Database | ❌    |
-| Login    | ❌    |
-| Page     | ❌    |
-| HTTPS    | ❌    |
+| Nome                           | Stato |
+| ------------------------------ | ----- |
+| Docker                         | ✅    |
+| HTTP                           | ✅    |
+| HTTPS                          | ✅    |
+| Reindirizzamento HTTP -> HTTPS | ✅    |
+| Database                       | ❌    |
+| Login                          | ❌    |
+| Page                           | 🚧    |
 
 ## TODO
 
@@ -27,4 +28,4 @@
 | ------------------------------------------------------------------------------------------------------- | ----- |
 | Se mi connetto alla console AWS da terminale senza avviare una sessione TMUX mi da vari errori di input | ❌    |
 | Leakkato il PVC fare un git hard reset e force push                                                     | ✅    |
-| Responsive images                                              | ❌    |
+| Responsive images                                                                                       | ❌    |
