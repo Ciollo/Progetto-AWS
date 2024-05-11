@@ -1,7 +1,7 @@
 <?php
 class DBConnect
 {
-    private $dsn = "mysql:host=mysql;dbname=34.228.39.101;port=3307;charset=utf8";
+    //private $dsn = "mysql:host=mysql;dbname=34.228.39.101;port=3307;charset=utf8";
     private $dbUsername = "root";
     private $dbPassword = "ProgettoAwsPhpMyAdmin!";
     private $conn;
