@@ -1,25 +1,11 @@
 <?php
-class DBConnect
-{
-    private $dsn = "mysql:host=34.228.39.101;dbname=prova;port=3307;charset=utf8";
-    private $dbUsername = "root"; // Assuming your MySQL username is 'root'
-    private $dbPassword = "ProgettoAwsPhpMyAdmin!"; // Assuming your MySQL password is 'ProgettoAwsPhpMyAdmin!'
-    private $conn;
+$host = 'mysql-2';
+$db   = 'prova';
+$user = 'root';
+$pass = 'strong_password';
 
-    public function connect()
-    {
-        try {
-            echo 'Attempt Connection.     ';
-            $this->conn = new PDO($this->dsn, $this->dbUsername, $this->dbPassword);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set error mode to exception
-            echo 'Connected successfully.      ';
-        } catch (PDOException $exception) {
-            echo 'Connection failed: ' . $exception->getMessage();
-        }
-        return $this->conn;
-    }
+$mysqli = new mysqli($host, $user, $pass, $db);
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
-
-$co = new DBConnect();
-$co->connect();
-?>
