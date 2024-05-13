@@ -1,17 +1,5 @@
 services:
-
-  php-apache-environment:
-    container_name: php-apache
-    build:
-      dockerfile: Dockerfile
-    depends_on:
-      - mysql-2
-    volumes:
-            - /home/ubuntu/Progetto-AWS:/var/www/html  # Changed this line
-    ports:
-      - "8081:80"
-
-  mysql-2:
+  mysql:
     container_name: mysql-2
     image: mysql
     ports:
@@ -32,7 +20,7 @@ services:
       NJS_RELEASE: "3~bookworm"
       PKG_RELEASE: "1~bookworm"
     volumes:
-            - /home/ubuntu/Progetto-AWS:/var/www/html  # Changed this line
+      - /home/ubuntu/Progetto-AWS:/home/ubuntu/Progetto-AWS
     tty: true
     stdin_open: true
     labels:
@@ -52,7 +40,7 @@ services:
       NJS_RELEASE: "3~bookworm"
       PKG_RELEASE: "1~bookworm"
     volumes:
-            - /home/ubuntu/Progetto-AWS:/var/www/html  # Changed this line
+      - /home/ubuntu/Progetto-AWS:/home/ubuntu/Progetto-AWS
     tty: true
     stdin_open: true
     labels:
@@ -60,7 +48,6 @@ services:
     entrypoint:
       - /docker-entrypoint.sh
     command: ["nginx", "-g", "daemon off;"]
-
 
   phpmyadmin:
     container_name: phpmyadmin-2
@@ -72,7 +59,8 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     depends_on:
-      - mysql-2
+      - mysql
 
 volumes:
-  mysql_data:  # Volume for MySQL data persistenc
+  mysql_data:  # Volume for MySQL data persistence
+
