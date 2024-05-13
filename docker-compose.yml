@@ -1,0 +1,66 @@
+services:
+  mysql:
+    container_name: mysql-2
+    image: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: strong_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  nginx-http:
+    container_name: nginx-http-2
+    image: nginx-selfsigned
+    ports:
+      - "80:80"  # Map port 80 on the host to port 80 in the container
+    environment:
+      NGINX_VERSION: 1.25.5
+      NJS_VERSION: 0.8.4
+      NJS_RELEASE: "3~bookworm"
+      PKG_RELEASE: "1~bookworm"
+    volumes:
+      - /home/ubuntu/Progetto-AWS:/home/ubuntu/Progetto-AWS
+    tty: true
+    stdin_open: true
+    labels:
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+    entrypoint:
+      - /docker-entrypoint.sh
+    command: ["nginx", "-g", "daemon off;"]
+
+  nginx-https:
+    container_name: nginx-https-2
+    image: nginx-selfsigned
+    ports:
+      - "443:443"  # Map port 443 on the host to port 443 in the container
+    environment:
+      NGINX_VERSION: 1.25.5
+      NJS_VERSION: 0.8.4
+      NJS_RELEASE: "3~bookworm"
+      PKG_RELEASE: "1~bookworm"
+    volumes:
+      - /home/ubuntu/Progetto-AWS:/home/ubuntu/Progetto-AWS
+    tty: true
+    stdin_open: true
+    labels:
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+    entrypoint:
+      - /docker-entrypoint.sh
+    command: ["nginx", "-g", "daemon off;"]
+
+  phpmyadmin:
+    container_name: phpmyadmin-2
+    image: phpmyadmin
+    ports:
+      - "8080:80"  # Map port 8080 on the host to port 80 in the container
+    environment:
+      PMA_HOST: mysql-2
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:  # Volume for MySQL data persistence
+
