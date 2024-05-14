@@ -1,12 +1,4 @@
 services:
-
-  php:
-    container_name: php-2
-    image: php:latest
-    volumes:
-      - /home/ubuntu/Progetto-AWS:/var/www/html
-    ports:
-      - "9000:9000"
   mysql:
     container_name: mysql-2
     image: mysql
@@ -19,8 +11,7 @@ services:
 
   nginx-http:
     container_name: nginx-http-2
-    image: custom-nginx
-      #image: nginx-selfsigned
+    image: nginx-selfsigned
     ports:
       - "80:80"  # Map port 80 on the host to port 80 in the container
     environment:
@@ -40,8 +31,7 @@ services:
 
   nginx-https:
     container_name: nginx-https-2
-    image: custom-nginx
-      #image: nginx-selfsigned
+    image: nginx-selfsigned
     ports:
       - "443:443"  # Map port 443 on the host to port 443 in the container
     environment:
@@ -58,6 +48,13 @@ services:
     entrypoint:
       - /docker-entrypoint.sh
     command: ["nginx", "-g", "daemon off;"]
+    links:
+      - php-fpm
+
+  php-fpm:
+    image: php:8-fpm
+    volumes:
+      - /home/ubuntu/Progetto-AWS:/home/ubuntu/Progetto-AWS
 
   phpmyadmin:
     container_name: phpmyadmin-2
@@ -73,4 +70,3 @@ services:
 
 volumes:
   mysql_data:  # Volume for MySQL data persistence
-
