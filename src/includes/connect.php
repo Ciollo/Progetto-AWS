@@ -1,4 +1,3 @@
 <?php
-        $conn = mysqli_connect('db', 'ciollo', 'ciollo123!', 'users');
+	$conn = mysqli_connect('db', 'ciollo', 'ciollo123!', 'users');
 ?>
-
