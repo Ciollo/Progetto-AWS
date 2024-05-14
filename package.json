@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/AWS_website/style/input.css -o ./src/AWS_website/style/style.css ",
-    "watch": "npx tailwindcss -i ./src/AWS_website/style/input.css -o ./src/AWS_website/style/style.css --watch "
+    "build": "npx tailwindcss -i ./Website/src/style/input.css -o ./Website/src/style/style.css ",
+    "watch": "npx tailwindcss -i ./Website/src/style/input.css -o ./Website/src/style/style.css --watch "
   },
   "repository": {
     "type": "git",

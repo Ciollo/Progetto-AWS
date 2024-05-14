@@ -5,7 +5,7 @@
 @layer {
   html,
   body {
-    @apply m-0 p-0;
+    @apply m-0 p-0 text-gray-500;
   }
 
   p {
@@ -21,7 +21,8 @@ hr {
   @apply my-8 h-1 border-0 bg-navyBlue dark:bg-gray-700;
 }
 
-ol {
+ol,
+ul {
   @apply list-decimal text-lg text-gray-500 dark:text-gray-400;
 }
 
@@ -32,3 +33,4 @@ li {
 label {
   @apply block mb-2 text-sm font-medium text-white dark:text-gray-300;
 }
+
