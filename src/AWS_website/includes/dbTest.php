@@ -1,25 +1,20 @@
 <?php
-class DBConnect
-{
-    private $dsn = "mysql:host=34.228.39.101;dbname=prova;port=3307;charset=utf8";
-    private $dbUsername = "root"; // Assuming your MySQL username is 'root'
-    private $dbPassword = "ProgettoAwsPhpMyAdmin!"; // Assuming your MySQL password is 'ProgettoAwsPhpMyAdmin!'
-    private $conn;
+$servername = "mysql-2"; // This should be the name of the MySQL service in your Docker Compose file
+$username = "root"; // Your MySQL username
+$password = "strong_password"; // Your MySQL password
+$database = "prova"; // Name of your database
 
-    public function connect()
-    {
-        try {
-            echo 'Attempt Connection.     ';
-            $this->conn = new PDO($this->dsn, $this->dbUsername, $this->dbPassword);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set error mode to exception
-            echo 'Connected successfully.      ';
-        } catch (PDOException $exception) {
-            echo 'Connection failed: ' . $exception->getMessage();
-        }
-        return $this->conn;
-    }
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
-$co = new DBConnect();
-$co->connect();
+echo "Connected successfully";
+
+// Close connection
+$conn->close();
 ?>
+
