@@ -2,9 +2,10 @@ services:
   nginx:
     build: ./nginx/
     ports:
+      #- 443:443
       - 80:80
     volumes:
-      - ./Website/:/var/www/html/
+      -  ./Website/:/var/www/html/
 
   php:
     build: ./Website/

@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				$_SESSION["email"] = $email;
 				$_SESSION["name"] = $name;
 
-				header("Location: ../public/main.html");
+				header("Location: ../public/main.php");
 				exit();
 			} else {
 				echo "Error: " . $stmt->error;
