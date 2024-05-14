@@ -8,13 +8,15 @@
       href="../assets/img/main_logo_favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/src/AWS_website/style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Register</title>
   </head>
   <body class="h-screen w-screen bg-navyBlue-100">
     <div class="flex h-screen items-center justify-center">
       <form
         class="mx-auto max-w-md rounded-xl bg-navyBlue px-5 py-5 xs:w-72 sm:w-80 md:w-2xl"
+	action="../includes/registerUser.php"
+	method="post"
       >
         <h2 class="mt-5 text-center text-white">Registrati</h2>
         <div class="mb-5">
@@ -22,6 +24,7 @@
           <input
             type="email"
             id="email"
+	    name="email"
             class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
             placeholder="email@example.com"
             required
@@ -33,6 +36,7 @@
             <input
               type="text"
               id="nome"
+              name="nome"
               class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
               placeholder="Nome"
               required
@@ -42,7 +46,7 @@
             <label for="email">Cognome</label>
             <input
               type="text"
-              id="cognome"
+              name="cognome"
               class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
               placeholder="Cognome"
               required
@@ -54,6 +58,7 @@
           <input
             type="password"
             id="password"
+              name="password"
             class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
             required
           />
