@@ -1,7 +1,7 @@
 <?php
 require 'connect.php';
 
-session_start();
+// session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -20,8 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $user = $result->fetch_assoc();
 
             if (password_verify($password, $user['password'])) {
-                $_SESSION["email"] = $email;
-                $_SESSION["name"] = $user['name'];
+                // $_SESSION["email"] = $email;
+                // $_SESSION["name"] = $user['name'];
 
                 header("Location: ../public/main.html");
                 exit();
