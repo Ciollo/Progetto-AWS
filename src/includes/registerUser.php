@@ -1,6 +1,8 @@
 <?php
 require 'connect.php';
 
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['email']) && !empty($_POST['nome']) && !empty($_POST['cognome']) && !empty($_POST['password'])) {
         $email = $_POST['email'];
@@ -16,7 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("ssss", $name, $email, $hashed_password, $surname);
 
             if ($stmt->execute()) {
-                echo "User registered successfully.";
+                $_SESSION["email"] = $email;
+                $_SESSION["name"] = $name;
+
+                header("Location: ../public/main.html");
+                exit();
             } else {
                 echo "Error: " . $stmt->error;
             }
