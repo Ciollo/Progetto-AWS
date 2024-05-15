@@ -490,19 +490,20 @@ if (!isset($_SESSION["email"])) {
 	myproject $ vim docker-compose.yml
 							</code>
 						</pre>
+
 										</div>
 										<div>
 											All'interno del file scriviamo:
 											<pre class=" mt-3 pt-6 bg-gray-950 dark:bg-gray-800 rounded-lg">
 							<code class="text-lg text-gray-50 dark:text-gray-400">
 	services:
-	nginx:
-		build: ./nginx/
-		ports:
-		- 443:443
-		- 80:80
-		volumes:
-		-  ./Website/:/var/www/html/
+		nginx:
+			build: ./nginx/
+			ports:
+			- 443:443
+			- 80:80
+			volumes:
+			-  ./Website/:/var/www/html/
 							</code>
 						</pre>
 											<p class="my-10">
