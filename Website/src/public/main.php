@@ -398,7 +398,14 @@ if (!isset($_SESSION["email"])) {
 									Per scaricare Docker Compose, esegui il seguente comando:
 									<pre class=" mt-3 pt-6 bg-gray-950 dark:bg-gray-800 rounded-lg">
 							<code class="text-lg text-gray-50 dark:text-gray-400">
-	$ sudo apt-get install docker-compose
+	$ apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+	$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg 
+		| sudo apt key add -
+
+	$ add-apt-repository "deb [arch=amd64] 
+		https://download.docker.com/linux/ubuntu 
+		$(lsb_release -cs) stable"
 							</code>
 						</pre>
 								</div>
