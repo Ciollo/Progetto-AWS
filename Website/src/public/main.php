@@ -20,37 +20,13 @@ if (!isset($_SESSION["email"])) {
 <body class="w-screen">
 	<header class="sticky top-0 flex w-full bg-navyBlue px-10 py-3">
 		<div>
-			<svg viewBox="0 0 16 16" data-view-component="true" stroke="white" stroke-width="0.7" stroke-linecap="round"
+			<svg onclick="window.open('https://github.com/Ciollo/Progetto-AWS', '_blank')" viewBox="0 0 16 16" data-view-component="true" stroke="white" stroke-width="0.7" stroke-linecap="round"
 				stroke-linejoin="round"
 				class="octicon octicon-mark-github v-align-middle color-fg-default h-8 w-8 cursor-pointer overflow-visible fill-white">
 				<path
 					d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
 				</path>
 			</svg>
-		</div>
-		<div class="ml-auto flex space-x-10">
-			<div>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="white" stroke-width="2"
-					stroke-linecap="round" stroke-linejoin="round"
-					class="feather feather-sun h-8 w-8 cursor-pointer fill-none">
-					<circle cx="12" cy="12" r="5"></circle>
-					<line x1="12" y1="1" x2="12" y2="3"></line>
-					<line x1="12" y1="21" x2="12" y2="23"></line>
-					<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-					<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-					<line x1="1" y1="12" x2="3" y2="12"></line>
-					<line x1="21" y1="12" x2="23" y2="12"></line>
-					<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-					<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-				</svg>
-			</div>
-			<div>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="white" stroke-width="2"
-					stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 fill-none">
-					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-					<circle cx="12" cy="7" r="4"></circle>
-				</svg>
-			</div>
 		</div>
 	</header>
 	<div class="mx-auto mt-11 xs:w-96 sm:w-96 md:w-0.5xl lg:w-2xl xl:w-3xl">
