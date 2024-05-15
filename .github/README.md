@@ -7,10 +7,9 @@ Questo progetto mira a creare un server virtuale utilizzando il cloud di AWS per
 - AWS (Amazon Web Services)
 - Docker
 - HTML5
-- CSS3
 - PHP
-- JavaScript (opzionale)
-- Bootstrap (opzionale)
+- MariaDb
+- PhpMyAdmin
 
 ## Spiegazione delle Tecnologie Utilizzate:
 
@@ -22,7 +21,9 @@ Questo progetto mira a creare un server virtuale utilizzando il cloud di AWS per
 
 - **PHP**: Utilizzato per gestire il backend del sito web, inclusi il form di login e l'autenticazione degli utenti.
 
-- **JavaScript e Bootstrap (opzionale)**: Utilizzati per aggiungere interattività e migliorare l'aspetto visivo del sito web.
+- **Mariadb**: Utilizzato come sistema di gestione di database relazionale per memorizzare i dati dell'applicazione. MariaDB è una fork di MySQL ed è conosciuta per le sue prestazioni elevate, scalabilità e compatibilità con MySQL. Viene utilizzato per gestire dati come informazioni sugli utenti, contenuti del sito e altre entità rilevanti.
+
+- **PhpMyAdmin**: Utilizzato come strumento di amministrazione per MariaDB, permette una gestione semplice e intuitiva del database tramite un'interfaccia web. PhpMyAdmin consente di eseguire query SQL, gestire tabelle e visualizzare i dati senza dover utilizzare la riga di comando, rendendo più accessibile l'amministrazione del database.
 
 ## Consegna del compito:
 

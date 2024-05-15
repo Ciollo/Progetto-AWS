@@ -15,7 +15,7 @@
 | Database                       | ✅     |
 | Login                          | ✅    |
 | Register                       | ✅    |
-| Page                           | 🚧    |
+| Page                           | ✅    |
 
 ## TODO
 
@@ -27,7 +27,5 @@
 
 | Nome                                                                                                    | Stato |
 |---------------------------------------------------------------------------------------------------------|-------|
-| Se mi connetto alla console AWS da terminale senza avviare una sessione TMUX mi da vari errori di input | ❌     |
 | Leakkato il PVC fare un git hard reset e force push                                                     | ✅     |
-| Responsive images                                                                                       | ❌     |
-| Session problem when login o r register                                                                 | ✅     |
+| Session problem when login or register                                                                 | ✅     |
