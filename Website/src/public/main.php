@@ -812,7 +812,7 @@ server {
 	</div>
 	</div>
 	</div>
-	<script src="/src/AWS_website/js/accortion.js"></script>
+	<script src="../js/accortion.js"></script>
 </body>
 
 </html>
